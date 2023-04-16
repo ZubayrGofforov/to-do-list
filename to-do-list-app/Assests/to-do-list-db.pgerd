@@ -1,0 +1,389 @@
+{
+  "version": "61400",
+  "data": {
+    "id": "53c15b1b-4c53-4af5-84be-2cc5d948dabc",
+    "offsetX": -17.537337406619102,
+    "offsetY": -29.30524373947758,
+    "zoom": 83.33333333333336,
+    "gridSize": 15,
+    "layers": [
+      {
+        "id": "fa437752-b00b-4324-9c08-a42bf5df9820",
+        "type": "diagram-links",
+        "isSvg": true,
+        "transformed": true,
+        "models": {
+          "2e31c9a0-ff75-4c8d-94f5-b314f7edc4c8": {
+            "id": "2e31c9a0-ff75-4c8d-94f5-b314f7edc4c8",
+            "locked": true,
+            "type": "onetomany",
+            "selected": false,
+            "source": "f086b09e-42a6-4206-869b-133a3b68669a",
+            "sourcePort": "498d4ab6-807d-45ec-9e72-f6161faccc4a",
+            "target": "3f789e2b-c716-46ed-9430-159b8539c4d5",
+            "targetPort": "b66b73da-4f28-4d1e-8309-2e756e84dcbc",
+            "points": [
+              {
+                "id": "85d465f4-9345-4b63-8b19-537e668f74c8",
+                "type": "point",
+                "x": 260.0018876252873,
+                "y": 166.9171929344334
+              },
+              {
+                "id": "8e50c0e1-ae52-461c-b0bf-c8f7035ba912",
+                "type": "point",
+                "x": 260.0018876252873,
+                "y": 421.4037917370829
+              },
+              {
+                "id": "6e4501e2-3f8a-4408-a15a-3a7016cea141",
+                "type": "point",
+                "x": 500.00302871733896,
+                "y": 421.4037917370829
+              },
+              {
+                "id": "efcd8faf-6c02-401e-9ce6-b2ab8c2a949f",
+                "type": "point",
+                "x": 500.00302871733896,
+                "y": 384.48985661480026
+              }
+            ],
+            "labels": [],
+            "width": 1,
+            "color": "gray",
+            "curvyness": 50,
+            "selectedColor": "rgb(0,192,255)",
+            "data": {
+              "local_table_uid": "3f789e2b-c716-46ed-9430-159b8539c4d5",
+              "local_column_attnum": 7,
+              "referenced_table_uid": "f086b09e-42a6-4206-869b-133a3b68669a",
+              "referenced_column_attnum": 0
+            }
+          }
+        }
+      },
+      {
+        "id": "2da8dafc-d920-464f-baae-560402456082",
+        "type": "diagram-nodes",
+        "isSvg": false,
+        "transformed": true,
+        "models": {
+          "f086b09e-42a6-4206-869b-133a3b68669a": {
+            "id": "f086b09e-42a6-4206-869b-133a3b68669a",
+            "type": "table",
+            "selected": false,
+            "x": 60,
+            "y": 75,
+            "ports": [
+              {
+                "id": "498d4ab6-807d-45ec-9e72-f6161faccc4a",
+                "type": "onetomany",
+                "x": 230.00188762528728,
+                "y": 166.9171929344334,
+                "name": "coll-port-0",
+                "alignment": "right",
+                "parentNode": "f086b09e-42a6-4206-869b-133a3b68669a",
+                "links": [ "2e31c9a0-ff75-4c8d-94f5-b314f7edc4c8" ],
+                "subtype": "one"
+              }
+            ],
+            "name": "Untitled",
+            "color": "rgb(0,192,255)",
+            "portsInOrder": [],
+            "portsOutOrder": [ "498d4ab6-807d-45ec-9e72-f6161faccc4a" ],
+            "otherInfo": {
+              "data": {
+                "columns": [
+                  {
+                    "name": "id",
+                    "is_primary_key": true,
+                    "attnum": 0,
+                    "cltype": "integer",
+                    "attlen": null,
+                    "attprecision": null,
+                    "collspcname": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c19"
+                  },
+                  {
+                    "name": "full_name",
+                    "is_primary_key": false,
+                    "attnum": 1,
+                    "cltype": "character varying",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attnotnull": false,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c20",
+                    "min_val_attlen": 1,
+                    "max_val_attlen": 2147483647
+                  },
+                  {
+                    "name": "email",
+                    "is_primary_key": false,
+                    "attnum": 2,
+                    "cltype": "character varying",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c21",
+                    "min_val_attlen": 1,
+                    "max_val_attlen": 2147483647
+                  },
+                  {
+                    "name": "password_hash",
+                    "is_primary_key": false,
+                    "attnum": 3,
+                    "cltype": "character",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c22",
+                    "min_val_attlen": 1,
+                    "max_val_attlen": 2147483647
+                  },
+                  {
+                    "name": "salt",
+                    "is_primary_key": false,
+                    "attnum": 4,
+                    "cltype": "character varying",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c23",
+                    "min_val_attlen": 1,
+                    "max_val_attlen": 2147483647
+                  }
+                ],
+                "name": "users",
+                "coll_inherits": [],
+                "hastoasttable": true,
+                "toast_autovacuum_enabled": "x",
+                "autovacuum_enabled": "x",
+                "primary_key": [
+                  {
+                    "columns": [ { "column": "id" } ],
+                    "include": []
+                  }
+                ],
+                "foreign_key": [],
+                "partition_keys": [],
+                "partitions": [],
+                "partition_type": "range",
+                "is_partitioned": false,
+                "schema": "public"
+              },
+              "note": "",
+              "metadata": {
+                "data_failed": false,
+                "is_promise": false
+              }
+            }
+          },
+          "3f789e2b-c716-46ed-9430-159b8539c4d5": {
+            "id": "3f789e2b-c716-46ed-9430-159b8539c4d5",
+            "type": "table",
+            "selected": false,
+            "x": 300,
+            "y": 75,
+            "ports": [
+              {
+                "id": "b66b73da-4f28-4d1e-8309-2e756e84dcbc",
+                "type": "onetomany",
+                "x": 470.00302871733896,
+                "y": 384.48985661480026,
+                "name": "coll-port-7",
+                "alignment": "right",
+                "parentNode": "3f789e2b-c716-46ed-9430-159b8539c4d5",
+                "links": [ "2e31c9a0-ff75-4c8d-94f5-b314f7edc4c8" ],
+                "subtype": "many"
+              }
+            ],
+            "name": "Untitled",
+            "color": "rgb(0,192,255)",
+            "portsInOrder": [],
+            "portsOutOrder": [ "b66b73da-4f28-4d1e-8309-2e756e84dcbc" ],
+            "otherInfo": {
+              "data": {
+                "columns": [
+                  {
+                    "name": "id",
+                    "is_primary_key": true,
+                    "attnum": 0,
+                    "cltype": "integer",
+                    "attlen": null,
+                    "attprecision": null,
+                    "collspcname": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c58"
+                  },
+                  {
+                    "name": "title",
+                    "is_primary_key": false,
+                    "attnum": 1,
+                    "cltype": "character varying",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c59",
+                    "min_val_attlen": 1,
+                    "max_val_attlen": 2147483647
+                  },
+                  {
+                    "name": "description",
+                    "is_primary_key": false,
+                    "attnum": 2,
+                    "cltype": "character varying",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c60",
+                    "min_val_attlen": 1,
+                    "max_val_attlen": 2147483647
+                  },
+                  {
+                    "name": "begin_time",
+                    "is_primary_key": false,
+                    "attnum": 3,
+                    "cltype": "time without time zone",
+                    "attlen": null,
+                    "attprecision": null,
+                    "collspcname": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c61",
+                    "min_val_attlen": 0,
+                    "max_val_attlen": 6
+                  },
+                  {
+                    "name": "end_time",
+                    "is_primary_key": false,
+                    "attnum": 4,
+                    "cltype": "time without time zone",
+                    "attlen": null,
+                    "attprecision": null,
+                    "collspcname": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c62",
+                    "min_val_attlen": 0,
+                    "max_val_attlen": 6
+                  },
+                  {
+                    "name": "created_at",
+                    "is_primary_key": false,
+                    "attnum": 5,
+                    "cltype": "time without time zone",
+                    "attlen": null,
+                    "attprecision": null,
+                    "collspcname": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c63",
+                    "min_val_attlen": 0,
+                    "max_val_attlen": 6
+                  },
+                  {
+                    "name": "status",
+                    "is_primary_key": false,
+                    "attnum": 6,
+                    "cltype": "character varying",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c64",
+                    "min_val_attlen": 1,
+                    "max_val_attlen": 2147483647
+                  },
+                  {
+                    "name": "owner_id",
+                    "is_primary_key": false,
+                    "attnum": 7,
+                    "cltype": "integer",
+                    "attlen": null,
+                    "attprecision": null,
+                    "collspcname": null,
+                    "attnotnull": false,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c65"
+                  }
+                ],
+                "name": "tasks",
+                "coll_inherits": [],
+                "hastoasttable": true,
+                "toast_autovacuum_enabled": "x",
+                "autovacuum_enabled": "x",
+                "primary_key": [
+                  {
+                    "columns": [ { "column": "id" } ],
+                    "include": []
+                  }
+                ],
+                "foreign_key": [
+                  {
+                    "confmatchtype": false,
+                    "autoindex": false,
+                    "columns": [
+                      {
+                        "local_column": "owner_id",
+                        "referenced": "id",
+                        "references_table_name": "users",
+                        "references": "f086b09e-42a6-4206-869b-133a3b68669a"
+                      }
+                    ],
+                    "confupdtype": "a",
+                    "confdeltype": "a"
+                  }
+                ],
+                "partition_keys": [],
+                "partitions": [],
+                "partition_type": "range",
+                "is_partitioned": false,
+                "schema": "public"
+              },
+              "note": "",
+              "metadata": {
+                "data_failed": false,
+                "is_promise": false
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}
