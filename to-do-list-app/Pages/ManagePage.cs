@@ -22,7 +22,7 @@ namespace to_do_list_app.Pages
                 { "3", "done" }
             };
 
-            task.Status = dict[Console.ReadLine()];
+            task!.Status = dict[Console.ReadLine()!];
             var result = await taskRepository.UpdateAsync(id, task);
             if (result) Console.WriteLine("Muvaffaqqiyatli");
             else Console.WriteLine("Xatolik bo'ldi");
