@@ -16,6 +16,8 @@ namespace to_do_list_app.Services
         {
             _userRepository = new UserRepository();
         }
+
+        // Account Login
         public async Task<(bool IsSuccessful, string Message)> LoginAsync(string email, string password)
         {
             var user = await _userRepository.FindByEmailAsync(email);
@@ -30,6 +32,7 @@ namespace to_do_list_app.Services
             else return (IsSuccessful: false, Message: "Password is wrong!");
         }
 
+        // Account Register
         public async Task<(bool IsSuccessful, string Message)> RegisterAsync(UserCreateViewModel viewModel)
         {
             var hashResult = PasswordHasher.Hash(viewModel.Password);
